@@ -1,21 +1,27 @@
 /* @group Links */
 
 a {
+  color: $link-color;
 	text-decoration: $link-text-decoration;
 	@include simple-border($link-border-pos, $link-border-width, $link-border-style, $link-border-color);
 	white-space: pre-wrap;
   &:link,
   &:visited {
+    color: $link-visited-link-color;
   	@include simple-border($link-visited-border-pos, $link-visited-border-width, $link-visited-border-style, $link-visited-border-color);
   }
   &[href]:hover,
   &[href]:focus {
+    text-decoration: $link-hover-text-decoration;
+    color: $link-hover-link-color;
   	@include simple-border($link-hover-border-pos, $link-hover-border-width, $link-hover-border-style, $link-hover-border-color);
   }
   &:active {
+    color: $link-active-link-color;
   	@include simple-border($link-active-border-pos, $link-active-border-width, $link-active-border-style, $link-active-border-color);
   } 
   .logo &, h1 &, h2 &, h3 & {
+    color: $headers-link-color;
   	@include simple-border($logo-headers-border-pos, $logo-headers-border-width, $logo-headers-border-style, $logo-headers-border-color);
 	}
 }

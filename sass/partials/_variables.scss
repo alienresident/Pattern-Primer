@@ -230,6 +230,7 @@ $link-visited-border-width: $link-border-width;
 $link-visited-border-style: $link-border-style;
 $link-visited-border-color: $link-border-color;
 /// Hover
+$link-hover-text-decoration: underline !default;
 $link-hover-link-color: #c03;
 $link-hover-border-pos: $link-border-pos;
 $link-hover-border-width: $link-border-width;
@@ -242,6 +243,7 @@ $link-active-border-width: $link-border-width;
 $link-active-border-style: $link-border-style;
 $link-active-border-color: $link-active-link-color;
 /// Logo and Headers
+$headers-link-color: $link-color;
 $logo-headers-border-pos: none;
 $logo-headers-border-width: 0;
 $logo-headers-border-style: $link-border-style;
